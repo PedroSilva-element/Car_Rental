@@ -1,0 +1,24 @@
+aside{
+    display: block;
+    float: left;
+    border-radius: 5px;
+    width: 24%;
+    height: 100%;
+    background-color: rgb(199, 196, 196);
+}
+
+.menu-float{
+    border-radius: 20% 10% 20% 10%;
+    padding: 20px;
+    margin: 1.5%;
+}
+.padrao{
+    text-align: center;
+    margin: 5%;
+}
+.padrao input{
+    text-align: center;
+    border-radius: 10%;
+    width: 50%;
+    padding: 10px;
+}

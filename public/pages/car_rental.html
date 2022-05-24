@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="../../src/layout/global-style/interface.css">
+    <script type="module" src="../../src/scripts/containers/car.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <aside>
+            <header>
+                <hgroup>
+                    <h1>Car_Rental</h1>
+                    <h2>Bem-Vindo</h2>
+                </hgroup>
+            </header>
+            <button class="menu-float"><img src="../../src/image/icons/historico-inativo.png" alt=""></button>
+            <button class="menu-float"><img src="../../src/image/icons/caixa-inativo.png" alt=""> </button>
+            <button class="menu-float"><img src="../../src/image/icons/cadastro-inativo.png" alt=""> </button>
+            
+            <form class="padrao">
+                <label for="valorPadrao">R$/Min</label>
+                <br>
+                <input type="text" name="" id="valorPadrao" disabled>
+                <br>
+                <label for="valorAtual">R$/Atual</label>
+                <br>
+                <input type="text" name="" id="valorAtual" disabled>
+            </form>
+            
+            <footer>
+                <h3>Picos-Pi</h3>
+                <h3>Data</h3>
+            </footer>
+        </aside>
+
+        <section>
+            <article class="operation">
+
+                <form>
+                    <label for="carro"></label>
+                    <input type="text" name="" id="carro" list="list_car" placeholder="Escolha um carro">
+                    <label for="duracao"></label>
+                    <input type="text" name="" id="duracao" list="list-time">
+                    <input type="button" value="Iniciar" class="iniciar">
+                </form>
+
+                <datalist id="list_car">
+                    <option value="" selected></option>
+                    <option value="Carro 01"></option>
+                </datalist>
+
+                <datalist id="list-time">
+                    <option value="" selected></option>
+                    <option value="10 min"></option>
+                </datalist>
+            </article>
+
+            <article class="operation-board">
+                <table class="view">
+                    <th>
+                        <td class="order">Order</td>
+                        <td class="car">Car</td>
+                        <td class="time">Time</td>
+                        <td class="start">Start</td>
+                        <td class="end">End</td>
+                        <td class="finsh">Finish</td>
+                    </th>
+                </table>
+
+                <div class="itensList"></div>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
